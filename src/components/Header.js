@@ -38,13 +38,11 @@ const Header = () => {
             </div>
 
             <div className='header-bottom'>
-                <h1 id='rest-title-h1'>Restaurant Title</h1>
+                <h1 id='rest-title-h1'>Bite Me Burgers</h1>
                 <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Suspendisse faucibus ex ligula, eu feugiat turpis auctor et. 
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br />
+                Suspendisse faucibus ex ligula, eu feugiat turpis auctor et.<br />
                 Aenean vel risus id elit egestas commodo.<br />
-                Nullam cursus porta mollis. Donec sollicitudin, nisl eget imperdiet malesuada, 
-                elit tellus malesuada nisl, nec gravida justo turpis eget turpis
                 </p>
                 <button className='button' id='headerBtnMenu'>View The Menu</button>
             </div>

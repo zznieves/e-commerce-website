@@ -50,6 +50,17 @@
   flex-direction: column;
   align-items: center;
 
+  /* set background image for Header Component */
+  background-image: url(./assets/burger_3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  background-color: grey;
+  background-blend-mode: multiply;
+
+  color: white;
+
 }
 
 .header-top {
@@ -78,7 +89,11 @@
 .navBar > a {
   margin-right: 15%;
   text-decoration: none;
+
+  color: white;
 }
+
+
 
 #rest-title-h1 {
   font-size: 3em;
@@ -88,11 +103,19 @@
 
 
 #rest-title-h3 {
+  margin-left: 1%;
   margin-right: 5%;
 }
 
 #headerBtnMenu {
   margin-bottom: 10%;
+
+  font-size: large;
+  padding: .8% 2.5% .8%;
+
+  border: 1px solid white;
+  color: white;
+  background-color: transparent;
 }
 
 
