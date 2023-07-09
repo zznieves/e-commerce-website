@@ -181,3 +181,38 @@
 }
 
 
+/* Location Component ruleset */
+
+.location {
+  border: 3px solid black;
+
+  display: flex;
+  flex-direction: row;
+  
+  justify-content: center;
+
+  padding-top: 5%;
+  padding-bottom: 5%;
+
+}
+
+.location-info {
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: flex-start;
+
+  margin-right: 10%;
+}
+
+.location-info > h2, p {
+  text-align: left;
+}
+
+
+#interactive-map {
+
+  height: 400px;
+  width: 800px;
+}
