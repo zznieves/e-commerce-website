@@ -42,6 +42,8 @@
   font-family: 'Montserrat';
 }
 
+/* Header Component ruleset */
+
 .header {
   border: 5px solid black;
 
@@ -93,6 +95,10 @@
   color: white;
 }
 
+.navBar > a:hover {
+
+  text-decoration: underline;
+}
 
 
 #rest-title-h1 {
@@ -116,6 +122,62 @@
   border: 1px solid white;
   color: white;
   background-color: transparent;
+}
+
+
+/* AboutUs Component ruleset */
+
+.AboutUs {
+
+  display: flex;
+  flex-direction: row;
+
+  justify-content: center;
+
+  margin-top: 10%;
+  margin-bottom: 10%;
+
+  padding-left: 10%;
+}
+
+.aboutUsPhoto {
+
+  margin-right: 5%;
+  margin-top: 1.25%;
+
+}
+
+.aboutUsText {
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: baseline;
+  justify-content: center;
+}
+
+.aboutUsText > * {
+  margin-bottom: 1.5%;
+}
+
+
+#time-title {
+  margin-bottom: 0;
+}
+
+#aboutUsTitle {
+  font-size: 3em;
+
+  font-weight: bold;
+
+  margin-top: 3%;
+}
+
+#aboutUsTextContent {
+  text-align: left;
+
+  width: 50%;
 }
 
 
