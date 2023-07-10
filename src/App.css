@@ -180,6 +180,70 @@
   width: 50%;
 }
 
+/* Menu Component ruleset */
+.menu {
+  border: 3px solid red;
+
+  display: flex;
+  flex-direction: column;
+
+  text-align: left;
+
+  margin-bottom: 5%;
+
+}
+
+.menu > h3 {
+  padding-left: 1%;
+}
+
+.classic-burgers {
+  border: 1px solid pink;
+
+  display: flex;
+  flex-direction: row;
+
+  justify-content: center;
+
+  margin-bottom: 5%;
+
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.menu-item {
+  border: 3px solid black;
+
+  display: flex;
+  flex-direction: column;
+
+  width: 25%;
+
+  margin: 2%;
+
+}
+
+.menu-item-name {
+
+  border: 1px solid black;
+  background-color: #19334d;
+  color: white;
+
+  margin-top: 0;
+  margin-bottom: 0;
+
+  padding: 5%;
+}
+
+.image-container > img {
+
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
 
 /* Location Component ruleset */
 
