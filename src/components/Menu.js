@@ -48,6 +48,33 @@ const Menu = () => {
                     })}
             </div>
 
+            <h3>Specialty Burgers</h3>
+            <div className='classic-burgers'>
+                    {burgers.map((burger, index) => {
+
+                        // for each burger, return an image for it
+                        return <MenuItem key={index} item={burger} />
+                    })}
+            </div>
+
+            <h3>Fries</h3>
+            <div className='classic-burgers'>
+                    {burgers.map((burger, index) => {
+
+                        // for each burger, return an image for it
+                        return <MenuItem key={index} item={burger} />
+                    })}
+            </div>
+
+            <h3>Drinks</h3>
+            <div className='classic-burgers'>
+                    {burgers.map((burger, index) => {
+
+                        // for each burger, return an image for it
+                        return <MenuItem key={index} item={burger} />
+                    })}
+            </div>
+
         </div>
     );
 };

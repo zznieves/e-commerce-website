@@ -8,10 +8,13 @@ function App() {
   return (
     <div className="App">
 
+    <div className='app-body'>
       <Header />
       <AboutUs />
       <Menu />
       <Location />
+
+    </div>
 
     </div>
   );

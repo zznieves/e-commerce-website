@@ -42,6 +42,15 @@
   font-family: 'Montserrat';
 }
 
+.app-body {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  flex: 1 0 0;
+}
+
 /* Header Component ruleset */
 
 .header {
@@ -51,6 +60,12 @@
 
   flex-direction: column;
   align-items: center;
+
+  width: 100%;
+
+  flex: 1 0 0;
+
+
 
   /* set background image for Header Component */
   background-image: url(./assets/burger_3.jpg);
@@ -63,6 +78,8 @@
 
   color: white;
 
+
+
 }
 
 .header-top {
@@ -74,6 +91,8 @@
   justify-content: flex-start;
   align-items: center;
 
+  flex: 1 0 0;
+
   width: 100%;
 }
 
@@ -84,6 +103,8 @@
 
   display: flex;
   flex-direction: column;
+
+  flex: 1 0 0;
 
   align-items: center;
 }
@@ -123,6 +144,7 @@
   color: white;
   background-color: transparent;
 }
+
 
 
 /* AboutUs Component ruleset */
@@ -205,10 +227,10 @@
 
   justify-content: center;
 
-  margin-bottom: 5%;
+  margin-bottom: 0;
 
-  padding-top: 5%;
-  padding-bottom: 5%;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
 }
 
 .menu-item {
@@ -255,6 +277,8 @@
   
   justify-content: center;
 
+  width: 100%;
+
   padding-top: 5%;
   padding-bottom: 5%;
 
@@ -279,4 +303,55 @@
 
   height: 400px;
   width: 800px;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+
+  .app-body {
+    min-width: 500px;
+  }
+
+  .header-top {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navBar {
+    padding-right: 30%;
+  }
+
+  .navBar > a {
+    text-align: center;
+  }
+
+  .AboutUs {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .aboutUsText {
+    align-items: center;
+  }
+
+
+  #aboutUsTextContent {
+    text-align: center;
+  }
+
+  .location {
+    flex-direction: column;
+
+    align-items: center;
+  }
+
+  .location-info {
+    padding-bottom: 5%;
+  }
+
+  #interactive-map {
+    width: 100%;
+  }
+
 }
