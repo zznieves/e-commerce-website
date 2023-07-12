@@ -50,6 +50,48 @@
 
 }
 
+/* NavBar Componet ruleset */
+.navBar {
+
+  background-color: transparent;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  width: 100%;
+
+  position: fixed;
+  top: 0;
+}
+
+.navBar.scrolled {
+  background-color: black;
+}
+
+#navBar-title {
+
+  color: white;
+  margin-top: 2%;
+}
+
+.navBar-links {
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+
+  justify-content: flex-start;
+}
+
+.navBar-links > a {
+  margin: 2%;
+
+  color: white;
+
+  text-decoration: none;
+}
+
 /* Header Component ruleset */
 
 .header {
@@ -63,37 +105,20 @@
 
   flex: 1 0 0;
 
-
-
   /* set background image for Header Component */
   background-image: url(./assets/burger_3.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center;
 
   background-color: grey;
   background-blend-mode: multiply;
 
   color: white;
 
-
-
 }
 
-.header-top {
-
-  display: flex;
-  flex-direction: row;
-
-  justify-content: flex-start;
-  align-items: center;
-
-  flex: 1 0 0;
-
-  width: 100%;
-}
-
-.header-bottom {
+.header-title {
 
   width: 100%;
 
@@ -105,29 +130,11 @@
   align-items: center;
 }
 
-.navBar > a {
-  margin-right: 15%;
-  text-decoration: none;
-
-  color: white;
-}
-
-.navBar > a:hover {
-
-  text-decoration: underline;
-}
-
 
 #rest-title-h1 {
   font-size: 3em;
 
   margin-top: 10%;
-}
-
-
-#rest-title-h3 {
-  margin-left: 1%;
-  margin-right: 5%;
 }
 
 #headerBtnMenu {
@@ -208,6 +215,11 @@
   align-items: center;
 
   width: 100%;
+
+  background-image: url();
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .menu-category {
@@ -306,14 +318,29 @@
     padding: 25px;
   }
 
-  /* Header */
+  #navbar {
+    width: 92%;
+  }
 
-  .header-top {
+  /* NavBar */
+  .navBar {
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 
-    min-width: 500px;
+    margin-top: 2%;
   }
+
+  .navBar-links {
+    justify-content: center;
+  }
+
+  #navBar-title {
+    margin-top: 2%;
+    margin-bottom: 0%;
+  }
+
+  /* Header */
 
   .header-bottom {
     min-width: 500px;
@@ -322,13 +349,6 @@
   .header-bottom > p {
     padding: 10%;
     text-align: center;
-  }
-
-  .navBar {
-
-    padding-right: 40%;
-
-    width: 50%;
   }
 
   /* AboutUs */

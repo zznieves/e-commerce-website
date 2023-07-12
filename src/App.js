@@ -3,6 +3,7 @@ import AboutUs from './components/AboutUs';
 import Header from './components/Header';
 import Location from './components/Location';
 import Menu from './components/Menu';
+import NavBar from './components/NavBar';
 
 function App() {
   return (
@@ -10,6 +11,30 @@ function App() {
 
     <div className='app-body'>
       <Header />
+      <NavBar 
+        links={[
+          {
+            name: 'Home',
+            url: '#Home'
+          },
+          {
+            name: 'About',
+            url: '#About'
+          },
+          {
+            name: 'Menu',
+            url: '#Menu'
+          },
+          {
+            name: 'Order',
+            url: '#Order'
+          },
+          {
+            name: 'Contact',
+            url: '#Contact'
+          }
+        ]}
+      />
       <AboutUs />
       <Menu />
       <Location />
