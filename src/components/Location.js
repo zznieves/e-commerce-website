@@ -4,7 +4,7 @@ const Location = () => {
 
     // return a Location Component(HTML/JSX)
     return (
-        <div className="location">
+        <div className="location" id="Contact">
 
             <div className="location-info">
                 <h2>Location</h2>

@@ -115,7 +115,7 @@ const Menu = () => {
 
     // return a Menu Component(HTML/JSX)
     return(
-        <div className='menu'>
+        <div className='menu' id='Menu'>
 
             <h3>Burgers</h3>
             <div className='menu-category' id='burger-menu'>

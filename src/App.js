@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
 
-    <div className='app-body'>
+    <div className='app-body' id='Home'>
       <Header />
       <NavBar 
         links={[

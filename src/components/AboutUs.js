@@ -5,7 +5,7 @@ const AboutUs = () => {
 
     // return an AboutUs Component(HTML/JSX)
     return (
-        <div className="AboutUs">
+        <div className="AboutUs" id="About">
 
             <div className="aboutUsPhoto">
                 <img src={AboutUsPhoto} alt="aboutUsStockImage"/>
