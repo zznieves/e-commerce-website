@@ -40,9 +40,7 @@ const Header = () => {
             <div className='header-bottom'>
                 <h1 id='rest-title-h1'>Bite Me Burgers</h1>
                 <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br />
-                Suspendisse faucibus ex ligula, eu feugiat turpis auctor et.<br />
-                Aenean vel risus id elit egestas commodo.<br />
+                Where passion meets taste and every bite is a journey.
                 </p>
                 <button className='button' id='headerBtnMenu'>View The Menu</button>
             </div>

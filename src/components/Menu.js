@@ -1,78 +1,176 @@
 import React from 'react';
+
+// burger images
+import ClassicPatty from '../assets/msPattyBurger.jpg';
+import BeefBomb from '../assets/beefBombBurger.jpg';
+import TheSheriff from '../assets/sheriffBurger.jpg';
 import MenuItem from './MenuItem';
 
-import MsPattyBurger from '../assets/msPattyBurger.jpg';
-import BeefBurgerBomb from '../assets/beefBombBurger.jpg';
-import SheriffBurger from '../assets/sheriffBurger.jpg';
+// fry images
+import ClassicFries from '../assets/classicFries.jpg';
+import ChiliCheeseFries from '../assets/chiliCheeseFries.jpg';
+import SweetPotatoFries from '../assets/sweetPotatoFries.jpg';
+
+// drink images
+import Sodas from '../assets/soda.jpg';
+import Lemonades from '../assets/lemonade.jpg';
+import Beer from '../assets/beer.jpg';
+
+// dessert images
+import Brownie from '../assets/brownies.jpg';
+import ApplePie from '../assets/applePie.jpg';
+import CheeseCake from '../assets/cheeseCake.jpg';
 
 const Menu = () => {
 
-    // burger menu data
-    const burgers = [
+    // menu items
+
+    // burger menu
+    const burgerMenu = [
         {
-            name: 'Ms.Patty',
-            info: `Perfectly seasoned all-beef patty, cooked to perfection, lettuce, tomato, cheese, 
-                    and ketchup nestled between two freshly baked brioche buns.`,
-            photo: MsPattyBurger,
-            price: 11.00
+            name: 'The Classic Patty',
+            photo: ClassicPatty,
+            info: '',
+            price: 10
         },
         {
             name: 'The Beef Bomb',
-            info: `Brace yourself for an explosion of bold and savory flavors.
-                    All-beef patty, special sauce, smoky bacon, melted aged cheddar cheese, lettuce, tomato, and red onions
-                    served on toasted artisan bread.`,
-            photo: BeefBurgerBomb,
-            price: 12.00
+            info: '',
+            photo: BeefBomb,
+            price: 12
         },
         {
             name: 'The Sheriff',
-            info: `A tribute to the legendary lawmen of yesteryears.
-                    Perfectly seasoned handcrafted beef patty topped with thick-cut bacon, melted pepper jack cheese for spice.
-                    Topped with a zesty signature barbecue sauce and served on a toasted Kaiser roll.`,
-            photo: SheriffBurger,
-            price: 15.00
+            info: '',
+            photo: TheSheriff,
+            price: 15
+        }
+    ];
+
+    // Fry Menu
+    const fryMenu = [
+        {
+            name: 'Classic Fries',
+            info: '',
+            photo: ClassicFries,
+            price: 5
+        },
+        {
+            name: 'Chili Cheese Fries',
+            info: '',
+            photo: ChiliCheeseFries,
+            price: 10
+        },
+        {
+            name: 'Sweet Potato Fries',
+            info: '',
+            photo: SweetPotatoFries,
+            price: 8
+        }
+    ];
+
+    // Drink Menu
+    const drinkMenu = [
+        {
+            name: 'Sodas',
+            info: '',
+            photo: Sodas,
+            price: 5
+        },
+        {
+            name: 'Lemonades',
+            info: '',
+            photo: Lemonades,
+            price: 7
+        },
+        {
+            name: 'Homebrew Beer',
+            info: '',
+            photo: Beer,
+            price: 8
+        }
+    ];
+
+    // Dessert Menu
+    const dessertMenu = [
+        {
+            name: 'Brownie Stack',
+            info: '',
+            photo: Brownie,
+            price: 10
+        },
+        {
+            name: 'Apple Pie',
+            info: '',
+            photo: ApplePie,
+            price: 10
+        },
+        {
+            name: 'Cheesecake',
+            info: '',
+            photo: CheeseCake,
+            price: 10
         }
     ];
 
     // return a Menu Component(HTML/JSX)
-    return (
+    return(
         <div className='menu'>
 
-            <h3>Classic Burgers</h3>
+            <h3>Burgers</h3>
+            <div className='menu-category' id='burger-menu'>
+                {burgerMenu.map((item, index) => {
 
-            <div className='classic-burgers'>
-                    {burgers.map((burger, index) => {
-
-                        // for each burger, return an image for it
-                        return <MenuItem key={index} item={burger} />
-                    })}
-            </div>
-
-            <h3>Specialty Burgers</h3>
-            <div className='classic-burgers'>
-                    {burgers.map((burger, index) => {
-
-                        // for each burger, return an image for it
-                        return <MenuItem key={index} item={burger} />
-                    })}
+                    // return a MenuItem Component for each JavaScript Object in the Array
+                    return (
+                    <MenuItem 
+                        index={index}
+                        item={item} 
+                    />
+                    );
+                })}
             </div>
 
             <h3>Fries</h3>
-            <div className='classic-burgers'>
-                    {burgers.map((burger, index) => {
+            <div className='menu-category' id='fry-menu'>
+                {fryMenu.map((item, index) => {
 
-                        // for each burger, return an image for it
-                        return <MenuItem key={index} item={burger} />
-                    })}
+                    // return a MenuItem Component for each JavaScript Object in the Array
+                    return (
+                    <MenuItem 
+                        itemKey={index}
+                        item={item} 
+                    />
+                    );
+                })}
             </div>
 
             <h3>Drinks</h3>
-            <div className='classic-burgers'>
-                    {burgers.map((burger, index) => {
+            <div className='menu-category' id='drink-menu'>
+                {drinkMenu.map((item, index) => {
 
-                        // for each burger, return an image for it
-                        return <MenuItem key={index} item={burger} />
-                    })}
+                    // return a MenuItem Component for each JavaScript Object in the Array
+                    return (
+                    <MenuItem 
+                        itemKey={index}
+                        item={item} 
+                    />
+                    );
+                })}
+            </div>
+
+            <h3>Dessert</h3>
+            <div className='menu-category' id='dessert-menu'>
+                {dessertMenu.map((item, index) => {
+
+                    // return a MenuItem Component for each JavaScript Object in the Array
+                    return (
+                    <MenuItem 
+                        itemKey={index}
+                        item={item} 
+                    />
+                    );
+                })}
             </div>
 
         </div>
